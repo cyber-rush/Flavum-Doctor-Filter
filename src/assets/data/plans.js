@@ -1,0 +1,48 @@
+export const plans = [
+  {
+    id: 1,
+    plan: "Starter Plan",
+    cost: "Free",
+    benefits: [
+      "Access to Knowledge Centre",
+      "AI Based Breast Cancer Risk Assessment",
+      "Unlimited Queries on the Website (will be answered within 24 hrs)",
+      "Guided Self Breast Examination on the App",
+    ],
+    color: "irisBlueColor",
+  },
+  {
+    id: 2,
+    plan: "1 Year Plan",
+    cost: "4999",
+    benefits: [
+      "All Features from the Starter Plan",
+      "One Mammogram with Breast Ultrasound",
+      "Mammogram Reviewed and Reported by two Radiologists",
+      "Pre and Post Test Counselling",
+      "Unlimited Doctor Consultations for Breast Related Issues",
+      "Two Clinical Breast Examination (6 monthly)",
+      "Monthly Guided Self Breast Examination Reminders on the App",
+      "Follow up for changes in breast lesions",
+      "Free evaluation of any suspicious lesions",
+      "24 x 7 WhatsApp Support for all Queries by Our Breast Cancer Experts",
+    ],
+    link: "Click to Check Eligibility for free treatment of cancer while on the plan",
+    color: "flavumColor",
+  },
+  {
+    id: 3,
+    plan: "Follow Up Plan",
+    cost: "8999",
+    benefits: [
+      "Clinical Examinations at recommended intervals",
+      "Free Risk assessment and screening plan for your First Degree Relatives (Daughter, Mother and Sister)",
+      "Includes Mammogram, DEXA scan, Blood Tests, Ultrasounds, etc on case basis",
+      "For patients who have completed the treatment for Breast Cancer",
+      "Free diagnostic tests if recurrence of cancer is suspected",
+      "Free Treatment of Cancer Recurrence while on our plan ",
+    ],
+    link: "(For eligibility, call us on +91-8130028150)",
+    color: "purpleColor",
+  },
+];

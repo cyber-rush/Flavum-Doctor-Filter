@@ -1,0 +1,54 @@
+.top-to-btm {
+  position: relative;
+}
+
+.icon-position {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 20;
+}
+
+.icon-style {
+  background-color: #551b31;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  animation: movebtn 2s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-style.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-style:hover {
+  animation: none;
+  background: #fff;
+  color: #551b54;
+  border: 2px solid #551b54;
+}
+
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  /* 75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  } */
+}
