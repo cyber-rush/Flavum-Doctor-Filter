@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import TabData from './TabData';
 
-const FilterData = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const FilterData = ({ openModal, setOpenModal }) => {
     const [activeTab, setActiveTab] = useState('Locality');
     const [selectedLocalityIndex, setSelectedLocalityIndex] = useState(null);
     const [selectedAvailability, setSelectedAvailability] = useState(null);
@@ -36,12 +35,9 @@ const FilterData = () => {
         }
     };
 
-    const handleModalOpen = () => {
-        setIsModalOpen(true);
-    };
 
     const handleModalClose = () => {
-        setIsModalOpen(false);
+        setOpenModal(false);
     };
 
     const tabs = ['Locality', 'Availability', 'Price-Range', 'Gender', 'Specialist'];

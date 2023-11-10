@@ -6,7 +6,7 @@ import Loading from "../../components/Loading/Loading";
 import Modal from "../../components/common/Modal";
 import { Button, Dropdown, Placeholder } from "rsuite";
 import AppointmentForm from "../../components/Forms/AppointmentForm";
-import FilterData from "./FilterData";
+import FilterData from "../../components/Filter/FilterData";
 const DoctorCard = lazy(() => import("../../components/Doctors/DoctorCard"));
 
 
@@ -70,7 +70,7 @@ export default function Doctors() {
           }}
           title='Filter'
         >
-          <FilterData />
+          <FilterData openModal={openModal} setOpenModal={setOpenModal} />
         </Modal>
 
       </section>
